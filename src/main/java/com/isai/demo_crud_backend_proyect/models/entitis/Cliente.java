@@ -26,10 +26,10 @@ public class Cliente {
 
     @Column(length = 20, nullable = false)
     private String nombres;
-    
+
     @Column(length = 20, nullable = false)
     private String apellidos;
-    
-    @Column(length = 50, nullable = false)
+
+    @Column(length = 50, nullable = false, unique = true)
     private String email;
 }
